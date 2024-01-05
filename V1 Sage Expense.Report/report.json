@@ -110,6 +110,15 @@
           "x": 10.00,
           "y": 0.00,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f80c06a3e42729d00004\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":290,\"width\":280,\"height\":280,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 290.00,
+          "z": 1.00
         }
       ],
       "width": 1280.00
