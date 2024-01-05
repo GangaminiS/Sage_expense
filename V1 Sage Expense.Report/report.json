@@ -1,0 +1,97 @@
+{
+  "config": "{\"version\":\"5.50\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.50\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0ac6e1e5b8061776615a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":870.1312335958005,\"y\":388.0314960629921,\"z\":2000,\"width\":263.7270341207349,\"height\":280.5249343832021,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"GLAMF.ACCTDESC (groups)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GLAMF\",\"Type\":0}],\"Select\":[{\"GroupRef\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC (groups)\",\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}]},\"Name\":\"GLAMF.ACCTDESC (groups)\",\"NativeReferenceName\":\"ACCTDESC (groups)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 280.52,
+          "width": 263.73,
+          "x": 870.13,
+          "y": 388.03,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"2909627c647ae2909091\",\"layouts\":[{\"id\":0,\"position\":{\"x\":760.9448818897638,\"y\":25.196850393700785,\"z\":4000,\"width\":431.70603674540683,\"height\":282.20472440944883,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"GLAMF.ACCTDESC (groups)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(GLPOST.TRANSAMT)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GLAMF\",\"Type\":0},{\"Name\":\"g1\",\"Entity\":\"GLPOST\",\"Type\":0}],\"Select\":[{\"GroupRef\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC (groups)\",\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}]},\"Name\":\"GLAMF.ACCTDESC (groups)\",\"NativeReferenceName\":\"ACCTDESC (groups)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Property\":\"TRANSAMT\"}},\"Function\":0},\"Name\":\"Sum(GLPOST.TRANSAMT)\",\"NativeReferenceName\":\"Sum of TRANSAMT\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Property\":\"TRANSAMT\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{}}}",
+          "filters": "[{\"expression\":{\"GroupRef\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"GLAMF\"}},\"Property\":\"ACCTDESC (groups)\",\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"GLAMF\"}},\"Property\":\"ACCTDESC\"}}]}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GLAMF\",\"Type\":0},{\"Name\":\"g1\",\"Entity\":\"GLPOST\",\"Type\":0}],\"Select\":[{\"GroupRef\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC (groups)\",\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}]},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Property\":\"TRANSAMT\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"g\",\"Entity\":\"GLAMF\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"GroupRef\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC (groups)\",\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}]}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 282.20,
+          "width": 431.71,
+          "x": 760.94,
+          "y": 25.20,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7c13ec9160005e632316\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.47769028871391,\"y\":194.85564304461943,\"z\":5000,\"width\":245.249343832021,\"height\":194.85564304461943,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"GLAMF.Operating Expense\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GLAMF\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Operating Expense\"},\"Name\":\"GLAMF.Operating Expense\",\"NativeReferenceName\":\"Operating Expense\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Operating Expense\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 194.86,
+          "width": 245.25,
+          "x": 18.48,
+          "y": 194.86,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"828f0d65db90608d81a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":344.3569553805774,\"y\":25.196850393700785,\"z\":1000,\"width\":376.2729658792651,\"height\":310.76115485564304,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"GLAMF.ACCTDESC (groups)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(GLPOST.TRANSAMT)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GLAMF\",\"Type\":0},{\"Name\":\"g1\",\"Entity\":\"GLPOST\",\"Type\":0}],\"Select\":[{\"GroupRef\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC (groups)\",\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}]},\"Name\":\"GLAMF.ACCTDESC (groups)\",\"NativeReferenceName\":\"ACCTDESC (groups)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Property\":\"TRANSAMT\"}},\"Function\":0},\"Name\":\"Sum(GLPOST.TRANSAMT)\",\"NativeReferenceName\":\"Sum of TRANSAMT\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Property\":\"TRANSAMT\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 310.76,
+          "width": 376.27,
+          "x": 344.36,
+          "y": 25.20,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"c000533e41001956ba8b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.275590551181104,\"y\":411.5485564304462,\"z\":3000,\"width\":685.3543307086613,\"height\":280.5249343832021,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"GLAMF.Total Expense\"}],\"Category\":[{\"queryRef\":\"GLPOST.DOCDATE.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"GLPOST.DOCDATE.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"GLPOST.DOCDATE.Variation.Date Hierarchy.Month\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GLAMF\",\"Type\":0},{\"Name\":\"g1\",\"Entity\":\"GLPOST\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Total Expense\"},\"Name\":\"GLAMF.Total Expense\",\"NativeReferenceName\":\"Total Expense\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Name\":\"Variation\",\"Property\":\"DOCDATE\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"GLPOST.DOCDATE.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"DOCDATE Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Name\":\"Variation\",\"Property\":\"DOCDATE\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"GLPOST.DOCDATE.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"DOCDATE Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g1\"}},\"Name\":\"Variation\",\"Property\":\"DOCDATE\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"GLPOST.DOCDATE.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"DOCDATE Month\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.52,
+          "width": 685.35,
+          "x": 35.28,
+          "y": 411.55,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"e98b2ad5a782d42113e2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":6000,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"fedb125c4306a12d1ab8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":18.47769028871391,\"y\":0,\"z\":0,\"width\":245.249343832021,\"height\":194.85564304461943,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"GLAMF.Total Expense\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"GLAMF\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Total Expense\"},\"Name\":\"GLAMF.Total Expense\",\"NativeReferenceName\":\"Total Expense\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"Total Expense\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 194.86,
+          "width": 245.25,
+          "x": 18.48,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

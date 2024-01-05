@@ -1,0 +1,2839 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"GLAFS\",\"GLAMF\",\"GLPOST\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.124.1052.0 (23.12)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "9938a711-5894-4bd3-abfa-c86b4a2a176a",
+        "fromColumn": "ACCTID",
+        "fromTable": "GLAFS",
+        "toColumn": "ACCTID",
+        "toTable": "GLAMF"
+      },
+      {
+        "name": "ef9cb2c9-3851-4d24-be04-5bc108a73f6b",
+        "fromColumn": "ACCTID",
+        "fromTable": "GLPOST",
+        "toColumn": "ACCTID",
+        "toTable": "GLAMF"
+      },
+      {
+        "name": "0cad5aae-0dac-41c7-b34e-ea50592567d8",
+        "fromColumn": "Date",
+        "fromTable": "GLAFS",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_2f460ccd-4e66-49dd-9e19-88ed96f1948d"
+      },
+      {
+        "name": "91f88b28-9da1-4a49-a865-dccaa22c713d",
+        "fromColumn": "DOCDATE",
+        "fromTable": "GLPOST",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_c752d224-1d1d-459e-a50c-be9c28e704bb"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "GLAFS",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ACCTID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f73178ce-9996-4526-a57c-cacd90f794d3",
+            "sourceColumn": "ACCTID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FSCSYR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "357dd4f1-a413-4ea7-841f-55d9152833d7",
+            "sourceColumn": "FSCSYR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FSCSDSG",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "76e5a266-69b1-4005-99bb-5ad6ade79b7d",
+            "sourceColumn": "FSCSDSG",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FSCSCURN",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8dc49acd-3780-42f8-95cf-7c936e689e55",
+            "sourceColumn": "FSCSCURN",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CURNTYPE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3ad428d6-2302-48bd-9875-89d39850d20a",
+            "sourceColumn": "CURNTYPE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AUDTDATE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "caaffce2-ffe2-4645-aff2-3cb12d60fbc5",
+            "sourceColumn": "AUDTDATE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AUDTTIME",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "9ef15382-862e-43c9-8eb0-673faedb46d9",
+            "sourceColumn": "AUDTTIME",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AUDTUSER",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f2778d71-4604-44ea-8458-9496beff62c3",
+            "sourceColumn": "AUDTUSER",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AUDTORG",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "98f39331-c34f-4607-8423-abce19062b67",
+            "sourceColumn": "AUDTORG",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SWRVL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9f9b6511-993e-4212-8f72-e2fc5caece2f",
+            "sourceColumn": "SWRVL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CODERVL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1fc23d26-3c72-42f1-96ba-003f0e8fdaec",
+            "sourceColumn": "CODERVL",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SCURNDEC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "539e562a-0496-4814-b549-65487ced3078",
+            "sourceColumn": "SCURNDEC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OPENBAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1a4fce24-aa17-4df5-9b65-1aa1558a82ee",
+            "sourceColumn": "OPENBAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3bc00929-66eb-4d24-9176-3f5362ed5a36",
+            "sourceColumn": "NETPERD1",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3ced2a49-32fb-4493-9674-ba24dcab717f",
+            "sourceColumn": "NETPERD2",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7d07f129-7617-40fe-b80f-f29d8a97ddbc",
+            "sourceColumn": "NETPERD3",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD4",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0e5b87f6-ba91-45d2-9f83-bdc18f5f2e25",
+            "sourceColumn": "NETPERD4",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD5",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "01999f76-a75b-43bd-8db5-6e6ce5763f32",
+            "sourceColumn": "NETPERD5",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD6",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ae171ae3-1ac0-4f9f-9223-ccb5bc0e1ec6",
+            "sourceColumn": "NETPERD6",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD7",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d4b037e2-19d9-418e-ab71-ae284e2c842c",
+            "sourceColumn": "NETPERD7",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD8",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0fe8fb5b-fac9-4712-8401-ee891b15d747",
+            "sourceColumn": "NETPERD8",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD9",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "412ffb6f-e1e8-499e-8c5a-8efea8dabfe4",
+            "sourceColumn": "NETPERD9",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD10",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d432dfd3-e697-4460-9abe-ef42a726b060",
+            "sourceColumn": "NETPERD10",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD11",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "59623195-dc16-4293-9e6f-f725a2a3cea1",
+            "sourceColumn": "NETPERD11",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD12",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "91bf5ae2-a033-4a57-b8bc-641e88556224",
+            "sourceColumn": "NETPERD12",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD13",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "24b410d2-4215-4500-ba0d-657d45fad9d9",
+            "sourceColumn": "NETPERD13",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD14",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "b660d6aa-d7a5-4cc5-93f2-721722ca66e0",
+            "sourceColumn": "NETPERD14",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NETPERD15",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1acb8a1a-c1b1-4323-8ec5-add6de6a5240",
+            "sourceColumn": "NETPERD15",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ACTIVITYSW",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f9b4f6a6-897f-45b9-8baf-275f64019a55",
+            "sourceColumn": "ACTIVITYSW",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "6831c1cb-42c6-45de-a39a-f5d5543c746e",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_2f460ccd-4e66-49dd-9e19-88ed96f1948d"
+                },
+                "isDefault": true,
+                "relationship": "0cad5aae-0dac-41c7-b34e-ea50592567d8"
+              }
+            ]
+          }
+        ],
+        "lineageTag": "b1fe4b6d-5878-4cb7-8f1e-bdeab7b6fb92",
+        "partitions": [
+          {
+            "name": "GLAFS",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"192.168.30.211\", \"TSTDAT\"),",
+                "    dbo_GLAFS = Source{[Schema=\"dbo\",Item=\"GLAFS\"]}[Data],",
+                "    #\"Inserted Date\" = Table.AddColumn(dbo_GLAFS, \"Date\", each Date.From(Text.From([AUDTDATE], \"en-US\")), type date),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Inserted Date\",{{\"Date\", type date}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_7b916e2a-ce1e-4f20-9a66-8a770d4154e5",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "f276dbaf-a3a6-4762-bc16-d3d60c759801",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "25e475b5-4257-4d2c-acd6-e3dd348105bb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "84ae0781-9a02-4175-85b5-4155668ab346",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "f2369a26-5f6a-4c79-9317-24361d282437",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "cf291abd-158e-4680-bd07-f5fa26bba8cd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "ccd109ea-9b6d-41f8-82f1-385ea0b107f1",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "df6747d9-71c5-46b5-aac5-0c51c90136ce",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "1e4449cb-fdeb-4a63-904a-9ca967835677",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "10db3c71-1a4e-4a78-b032-f25d9b12ec46",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "a6486cb0-e085-4205-ba4d-d05a2208fc26",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "209ccacc-107e-47f7-9ab5-49b57b7c8f86",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "b8885cc8-b9a7-4d71-adcf-a9572e471386"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "94409c49-b299-41ec-a71c-713762324df3",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_7b916e2a-ce1e-4f20-9a66-8a770d4154e5",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GLAMF",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ACCTID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9da27060-3a67-4de4-ad0c-475bf35d37fa",
+            "sourceColumn": "ACCTID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AUDTDATE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7d4f7771-e2fc-48ee-943a-aaaaeaaaf582",
+            "sourceColumn": "AUDTDATE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AUDTTIME",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "02363870-de55-4b6a-9bca-72b0fbfed6a5",
+            "sourceColumn": "AUDTTIME",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AUDTUSER",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9593fb9c-5411-482e-aeac-c78a5cd96c84",
+            "sourceColumn": "AUDTUSER",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AUDTORG",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6573b4eb-fbfe-496a-8f57-602142703ac0",
+            "sourceColumn": "AUDTORG",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CREATEDATE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "b68c45f6-b73a-4e05-85b1-2030ba530703",
+            "sourceColumn": "CREATEDATE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ACCTDESC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"GLAMF\",\"TableItemName\":\"ACCTDESC (groups)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "17842bbc-2ddf-4c75-9273-d1d75f18cd9a",
+            "sourceColumn": "ACCTDESC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACCTTYPE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "82c5840e-25e0-4d11-9403-bab9d6ef6a4b",
+            "sourceColumn": "ACCTTYPE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACCTBAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "94807cb8-a2df-4943-ae1f-16d00c340684",
+            "sourceColumn": "ACCTBAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ACTIVESW",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "41de9355-f1f5-4597-9d71-f3de784956e4",
+            "sourceColumn": "ACTIVESW",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CONSLDSW",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d4d4994c-edc5-4913-ac8c-8209cd8921b0",
+            "sourceColumn": "CONSLDSW",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "QTYSW",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "786ec2d6-617f-4284-bdb4-7a99a9d7d9b0",
+            "sourceColumn": "QTYSW",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "UOM",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "db4a5616-1bae-4451-9e76-d57d87283bba",
+            "sourceColumn": "UOM",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ALLOCSW",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b9c6535e-ec22-4d58-afb7-b29913923592",
+            "sourceColumn": "ALLOCSW",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ACCTOFSET",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5d54e0b1-e267-47cd-a4e9-b2e915f6518f",
+            "sourceColumn": "ACCTOFSET",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACCTSRTY",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9e439241-187d-4ca6-8c18-1f976b818d8f",
+            "sourceColumn": "ACCTSRTY",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MCSW",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4228f260-6108-40a0-ad2f-94af26c84f86",
+            "sourceColumn": "MCSW",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SPECSW",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0a75fe77-6952-4cf3-9a4d-cc9532621b52",
+            "sourceColumn": "SPECSW",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ACCTGRPCOD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "86c5121b-90d4-4401-a609-13436811d7ba",
+            "sourceColumn": "ACCTGRPCOD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CTRLACCTSW",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1db9e111-ab06-4db7-ae10-81f385eb3f3f",
+            "sourceColumn": "CTRLACCTSW",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SRCELDGID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cd828ffe-78f1-4c1c-a3c8-6b3f5eb6ce7a",
+            "sourceColumn": "SRCELDGID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ALLOCTOT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "e44a4ec3-eef4-4d2c-961c-3f8f087c2515",
+            "sourceColumn": "ALLOCTOT",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ABRKID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "64663de4-f679-45a7-8d09-c7bb90b28415",
+            "sourceColumn": "ABRKID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "YRACCTCLOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "25de4be3-b2b2-4dd0-98bd-5d885d72b492",
+            "sourceColumn": "YRACCTCLOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ACCTFMTTD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ea5a7768-29e7-42cc-9d86-b28d15192a22",
+            "sourceColumn": "ACCTFMTTD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACSEGVAL01",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "afb64e42-5962-49f6-9e59-9d56780cda26",
+            "sourceColumn": "ACSEGVAL01",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACSEGVAL02",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d18355e3-b4a5-4940-ab1d-298edbba4067",
+            "sourceColumn": "ACSEGVAL02",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACSEGVAL03",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "416a3e1b-c630-41e5-b939-87bb5a3cbc61",
+            "sourceColumn": "ACSEGVAL03",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACSEGVAL04",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7f01d233-4fbb-4714-a389-03f75311b234",
+            "sourceColumn": "ACSEGVAL04",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACSEGVAL05",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e1ac43b2-fac4-49d1-a3eb-43d38f70693f",
+            "sourceColumn": "ACSEGVAL05",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACSEGVAL06",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f32e9930-c600-428d-9946-c46efe8b673c",
+            "sourceColumn": "ACSEGVAL06",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACSEGVAL07",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0293ab56-053a-4406-9083-feb09049a75b",
+            "sourceColumn": "ACSEGVAL07",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACSEGVAL08",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e73d583e-be58-43fc-8869-dbc863469809",
+            "sourceColumn": "ACSEGVAL08",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACSEGVAL09",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2382111e-69d9-4aad-915d-0da69d2683e1",
+            "sourceColumn": "ACSEGVAL09",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACSEGVAL10",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2cd3ae32-1aff-4157-b6db-23ae31b1ecec",
+            "sourceColumn": "ACSEGVAL10",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACCTSEGVAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "11682523-7dc6-4a66-bc55-7b323a411a8c",
+            "sourceColumn": "ACCTSEGVAL",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ACCTGRPSCD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b38252f4-9fb6-4f60-8f4b-f1712da5992b",
+            "sourceColumn": "ACCTGRPSCD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "POSTOSEGID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0e29507d-19a7-49ef-8c2c-9b24abd04ca4",
+            "sourceColumn": "POSTOSEGID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DEFCURNCOD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f0bf755f-f03d-49a7-b740-c01dd3ed1f25",
+            "sourceColumn": "DEFCURNCOD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OVALUES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f8196868-641b-400f-b74f-e835902b5c8e",
+            "sourceColumn": "OVALUES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TOVALUES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8b964c88-0ba2-4cf9-a06d-42fcafd7eaa3",
+            "sourceColumn": "TOVALUES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ROLLUPSW",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f9e1d492-a67b-409d-a32b-99db7c857e82",
+            "sourceColumn": "ROLLUPSW",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ACCTDESC (groups)",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"g\",\"Entity\":\"GLAMF\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"GroupItems\":[{\"DisplayName\":\"(Blank)\",\"BlankDefaultPlaceholder\":true},{\"DisplayName\":\"Administration and Office\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'DOCUMENTAION & HANDLING CHRGES'\"}}],[{\"Literal\":{\"Value\":\"'DUES & SUBSCRIPTION'\"}}],[{\"Literal\":{\"Value\":\"'DUES & SUBSCRIPTION - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'DUES & SUBSCRIPTION -ATM'\"}}],[{\"Literal\":{\"Value\":\"'DUES & SUBSCRIPTION -DMC'\"}}],[{\"Literal\":{\"Value\":\"'ENTERTAINMENT'\"}}],[{\"Literal\":{\"Value\":\"'ENTERTAINMENT - ATM'\"}}],[{\"Literal\":{\"Value\":\"'ENTERTAINMENT - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'ENTERTAINMENT - DMC'\"}}],[{\"Literal\":{\"Value\":\"'HEAD OFFICE EXPENSES'\"}}],[{\"Literal\":{\"Value\":\"'HEAD OFFICE EXPENSES -ATM'\"}}],[{\"Literal\":{\"Value\":\"'HEAD OFFICE EXPENSES -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'MANAGEMENT FEES'\"}}],[{\"Literal\":{\"Value\":\"'PRINTING & STATIONARY'\"}}],[{\"Literal\":{\"Value\":\"'PRINTING & STATIONARY - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'PRINTING & STATIONARY -ATM'\"}}],[{\"Literal\":{\"Value\":\"'PRINTING & STATIONARY -DMC'\"}}],[{\"Literal\":{\"Value\":\"'SHARD SERVICE COST'\"}}],[{\"Literal\":{\"Value\":\"'SHARD SERVICE COST -ATM'\"}}],[{\"Literal\":{\"Value\":\"'SHARD SERVICE COST -CATHAY'\"}}]]}}},{\"DisplayName\":\"Bad Debts\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'BAD  DEBTS  W/O'\"}}],[{\"Literal\":{\"Value\":\"'BAD & DOUBTFUL DEBTS'\"}}],[{\"Literal\":{\"Value\":\"'BAD & DOUBTFUL DEBTS - ATM'\"}}],[{\"Literal\":{\"Value\":\"'BAD & DOUBTFUL DEBTS - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'BAD & DOUBTFUL DEBTS - DMC'\"}}]]}}},{\"DisplayName\":\"Bank Charges\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'BANK CHARGES'\"}}],[{\"Literal\":{\"Value\":\"'BANK CHARGES - ATM'\"}}],[{\"Literal\":{\"Value\":\"'BANK CHARGES - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'BANK CHARGES - DMC'\"}}],[{\"Literal\":{\"Value\":\"'BANK GUARATEE CHARGES'\"}}]]}}},{\"DisplayName\":\"CSR\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'CSR PROJECTS EXPENSES'\"}}],[{\"Literal\":{\"Value\":\"'CSR PROJECTS EXPENSES- ATM'\"}}],[{\"Literal\":{\"Value\":\"'CSR PROJECTS EXPENSES- CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'DONATIONS'\"}}],[{\"Literal\":{\"Value\":\"'DONATIONS -ATM'\"}}],[{\"Literal\":{\"Value\":\"'DONATIONS -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'DONATIONS -DMC'\"}}]]}}},{\"DisplayName\":\"Depreciation\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'DEPRECIATION'\"}}],[{\"Literal\":{\"Value\":\"'DEPRECIATION -ATM'\"}}],[{\"Literal\":{\"Value\":\"'DEPRECIATION -CATHEY'\"}}],[{\"Literal\":{\"Value\":\"'DEPRECIATION -DMC'\"}}]]}}},{\"DisplayName\":\"Dividends\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'DIVIDENT PAID'\"}}],[{\"Literal\":{\"Value\":\"'DIVIDENT PAID -DMC'\"}}]]}}},{\"DisplayName\":\"Exchange cost\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'EXCHANGE GAIN / LOSS'\"}}],[{\"Literal\":{\"Value\":\"'EXCHANGE GAIN / LOSS  -DMC'\"}}],[{\"Literal\":{\"Value\":\"'FINACE COST ON EXCHANGE'\"}}],[{\"Literal\":{\"Value\":\"'FINACE COST ON EXCHANGE - ATM'\"}}],[{\"Literal\":{\"Value\":\"'FINACE COST ON EXCHANGE - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'FINACE COST ON EXCHANGE - DMC'\"}}]]}}},{\"DisplayName\":\"Hotel Booking Cost\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'HOTEL BOOKING COST'\"}}],[{\"Literal\":{\"Value\":\"'HOTEL BOOKING COST -ACE TRAVELS HOLIDAYS'\"}}],[{\"Literal\":{\"Value\":\"'HOTEL BOOKING COST -AST'\"}}],[{\"Literal\":{\"Value\":\"'HOTEL BOOKING COST -SLH'\"}}]]}}},{\"DisplayName\":\"Income costs\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'ACCOMODATION INCOME-COST -DMC'\"}}],[{\"Literal\":{\"Value\":\"'FACILITY INCOME -COST -DMC'\"}}],[{\"Literal\":{\"Value\":\"'GUESTS HANDLING INCOME -COST -DMC'\"}}],[{\"Literal\":{\"Value\":\"'HANDLING INCOME -COST -DMC'\"}}],[{\"Literal\":{\"Value\":\"'SUPPLEMENT INCOME -COST -DMC'\"}}],[{\"Literal\":{\"Value\":\"'TRANSFER INCOME -COST -DMC'\"}}]]}}},{\"DisplayName\":\"Insurance\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'INSUARANCE  (STAFF MEDICLE)'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (FIDELITY & CASH IN TRANSIT)'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (FIDELITY & CASH IN TRANSIT)- ATM'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (FIDELITY & CASH IN TRANSIT)- CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (FIDELITY & CASH IN TRANSIT)- DMC'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (OTHER)'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (OTHER)- ATM'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (OTHER)- CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (OTHER)- DMC'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (PREMISES)'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (PREMISES) - ATM'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (PREMISES) - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (PREMISES) - DMC'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (STAFF MEDICLE) - ATM'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (STAFF MEDICLE) - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'INSUARANCE (STAFF MEDICLE) - DMC'\"}}]]}}},{\"DisplayName\":\"Interest\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'LOAN INTEREST EXP -ASTL'\"}}],[{\"Literal\":{\"Value\":\"'O/D INTEREST'\"}}],[{\"Literal\":{\"Value\":\"'O/D INTEREST  -ATM'\"}}],[{\"Literal\":{\"Value\":\"'O/D INTEREST  -DMC'\"}}],[{\"Literal\":{\"Value\":\"'O/D INTEREST -CATHAY'\"}}]]}}},{\"DisplayName\":\"Other\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'IMPAIRMENT EXPENCES'\"}}],[{\"Literal\":{\"Value\":\"'OTHER EXPENSES'\"}}],[{\"Literal\":{\"Value\":\"'OTHER EXPENSES -ADDU'\"}}],[{\"Literal\":{\"Value\":\"'OTHER EXPENSES -ATM'\"}}],[{\"Literal\":{\"Value\":\"'OTHER EXPENSES -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'OTHER EXPENSES -DMC'\"}}]]}}},{\"DisplayName\":\"Professional and Legal Services\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'AUDIT FEE'\"}}],[{\"Literal\":{\"Value\":\"'AUDIT FEE - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'AUDIT FEE -ATM'\"}}],[{\"Literal\":{\"Value\":\"'AUDIT FEE -DMC'\"}}],[{\"Literal\":{\"Value\":\"'LAWYER''S FEE'\"}}],[{\"Literal\":{\"Value\":\"'LAWYER''S FEE -ATM'\"}}],[{\"Literal\":{\"Value\":\"'LAWYER''S FEE -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'LAWYER''S FEE -DMC'\"}}],[{\"Literal\":{\"Value\":\"'LEGAL CHARGES'\"}}],[{\"Literal\":{\"Value\":\"'LEGAL CHARGES - ATM'\"}}],[{\"Literal\":{\"Value\":\"'LEGAL CHARGES - DMC'\"}}],[{\"Literal\":{\"Value\":\"'LEGAL CHARGES -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'PROFESSIONAL CHARGES'\"}}],[{\"Literal\":{\"Value\":\"'PROFESSIONAL CHARGES -ATM'\"}}],[{\"Literal\":{\"Value\":\"'PROFESSIONAL CHARGES -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'PROFESSIONAL CHARGES -DMC'\"}}]]}}},{\"DisplayName\":\"Refund Expenses\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'REFUND EXPENSES'\"}}],[{\"Literal\":{\"Value\":\"'REFUND EXPENSES -ATM'\"}}],[{\"Literal\":{\"Value\":\"'REFUND EXPENSES -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'REFUND EXPENSES -DMC'\"}}]]}}},{\"DisplayName\":\"Salaries and Labour Costs\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'DIRECTOR''S SALARY'\"}}],[{\"Literal\":{\"Value\":\"'DIRECTOR''S SALARY  -ATM'\"}}],[{\"Literal\":{\"Value\":\"'DIRECTOR''S SALARY  -DMC'\"}}],[{\"Literal\":{\"Value\":\"'OTHER ALLOWANCES'\"}}],[{\"Literal\":{\"Value\":\"'OTHER ALLOWANCES -ATM'\"}}],[{\"Literal\":{\"Value\":\"'OTHER ALLOWANCES -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'OTHER ALLOWANCES -DMC'\"}}],[{\"Literal\":{\"Value\":\"'OVERTIME'\"}}],[{\"Literal\":{\"Value\":\"'OVERTIME - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'OVERTIME -ATM'\"}}],[{\"Literal\":{\"Value\":\"'OVERTIME -DMC'\"}}],[{\"Literal\":{\"Value\":\"'PENSION FUND (EMPLOYER CONTRIBUTION)'\"}}],[{\"Literal\":{\"Value\":\"'PENSION FUND (EMPLOYER CONTRIBUTION) - ATM'\"}}],[{\"Literal\":{\"Value\":\"'PENSION FUND (EMPLOYER CONTRIBUTION) - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'PENSION FUND (EMPLOYER CONTRIBUTION) - DMC'\"}}],[{\"Literal\":{\"Value\":\"'STAFF BONUS'\"}}],[{\"Literal\":{\"Value\":\"'STAFF BONUS -ATM'\"}}],[{\"Literal\":{\"Value\":\"'STAFF BONUS -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'STAFF BONUS -DMC'\"}}],[{\"Literal\":{\"Value\":\"'STAFF SALARY - (EXPATRIATE)'\"}}],[{\"Literal\":{\"Value\":\"'STAFF SALARY - (EXPATRIATE) -ATM'\"}}],[{\"Literal\":{\"Value\":\"'STAFF SALARY - (EXPATRIATE) -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'STAFF SALARY - (EXPATRIATE) -DMC'\"}}],[{\"Literal\":{\"Value\":\"'STAFF SALARY - (LOCAL)'\"}}],[{\"Literal\":{\"Value\":\"'STAFF SALARY - (LOCAL) -ADDU'\"}}],[{\"Literal\":{\"Value\":\"'STAFF SALARY - (LOCAL) -ATM'\"}}],[{\"Literal\":{\"Value\":\"'STAFF SALARY - (LOCAL) -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'STAFF SALARY - (LOCAL) -DMC'\"}}],[{\"Literal\":{\"Value\":\"'STAFF TRAINING'\"}}],[{\"Literal\":{\"Value\":\"'STAFF TRAINING -ATM'\"}}],[{\"Literal\":{\"Value\":\"'STAFF TRAINING -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'STAFF TRAINING -DMC'\"}}],[{\"Literal\":{\"Value\":\"'STAFF UNIFORM COST'\"}}],[{\"Literal\":{\"Value\":\"'STAFF UNIFORM COST - ATM'\"}}],[{\"Literal\":{\"Value\":\"'STAFF UNIFORM COST - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'STAFF UNIFORM COST - DMC'\"}}],[{\"Literal\":{\"Value\":\"'STAFF WELFARE'\"}}],[{\"Literal\":{\"Value\":\"'STAFF WELFARE - ADDU'\"}}],[{\"Literal\":{\"Value\":\"'STAFF WELFARE  -ATM'\"}}],[{\"Literal\":{\"Value\":\"'STAFF WELFARE - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'STAFF WELFARE  -DMC'\"}}]]}}},{\"DisplayName\":\"Selling and Advertisement \",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'ADVERTISEMENT'\"}}],[{\"Literal\":{\"Value\":\"'ADVERTISEMENT - ATM'\"}}],[{\"Literal\":{\"Value\":\"'ADVERTISEMENT - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'ADVERTISEMENT - DMC'\"}}],[{\"Literal\":{\"Value\":\"'MARKETING & BUSINESS PROMOTION'\"}}],[{\"Literal\":{\"Value\":\"'MARKETING & BUSINESS PROMOTION - ADDU'\"}}],[{\"Literal\":{\"Value\":\"'MARKETING & BUSINESS PROMOTION - ATM'\"}}],[{\"Literal\":{\"Value\":\"'MARKETING & BUSINESS PROMOTION - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'MARKETING & BUSINESS PROMOTION - DMC'\"}}]]}}},{\"DisplayName\":\"Tax\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'BPT EXPENSE'\"}}],[{\"Literal\":{\"Value\":\"'BPT EXPENSE -DMC'\"}}],[{\"Literal\":{\"Value\":\"'Deferred Tax Expense'\"}}],[{\"Literal\":{\"Value\":\"'GST EXPENCES'\"}}]]}}},{\"DisplayName\":\"Technology costs\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'IT CHARGES'\"}}],[{\"Literal\":{\"Value\":\"'IT CHARGES -ATM'\"}}],[{\"Literal\":{\"Value\":\"'IT CHARGES -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'IT CHARGES -DMC'\"}}]]}}},{\"DisplayName\":\"Ticket Costs\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'STAFF AIR TICKETS'\"}}],[{\"Literal\":{\"Value\":\"'STAFF AIR TICKETS - ADDU'\"}}],[{\"Literal\":{\"Value\":\"'STAFF AIR TICKETS  -ATM'\"}}],[{\"Literal\":{\"Value\":\"'STAFF AIR TICKETS - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'STAFF AIR TICKETS  -DMC'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST - FLY DUBAI'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST - GROUP BOOKING'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST - IATI  (OTA SYSTEM)'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST - INDIGO'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST  -MALDIVIAN AIR'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST - MANTA AIR'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST - MYSTIFLY'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST - UL (FARE)'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST - UL (TAX)'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST - US-Bangla Airlines'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST -AIR ASIA'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST -EMIRATES'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST -EMIRTES'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST -OTHER AIRLINE'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST -QATAR'\"}}],[{\"Literal\":{\"Value\":\"'TICKET COST -TIGER AIR'\"}}]]}}},{\"DisplayName\":\"Travelling\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'ASTL VISA COST'\"}}],[{\"Literal\":{\"Value\":\"'PER DIEM'\"}}],[{\"Literal\":{\"Value\":\"'PER DIEM - ADDU'\"}}],[{\"Literal\":{\"Value\":\"'PER DIEM - ATM'\"}}],[{\"Literal\":{\"Value\":\"'PER DIEM - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'PER DIEM - DMC'\"}}],[{\"Literal\":{\"Value\":\"'STAFF TRAVEL'\"}}],[{\"Literal\":{\"Value\":\"'STAFF TRAVEL   -ATM'\"}}],[{\"Literal\":{\"Value\":\"'STAFF TRAVEL   -DMC'\"}}],[{\"Literal\":{\"Value\":\"'STAFF TRAVEL - ADDU'\"}}],[{\"Literal\":{\"Value\":\"'STAFF TRAVEL - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'STAFF VISA'\"}}],[{\"Literal\":{\"Value\":\"'STAFF VISA - ATM'\"}}],[{\"Literal\":{\"Value\":\"'STAFF VISA - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'STAFF VISA - DMC'\"}}],[{\"Literal\":{\"Value\":\"'TAXI & DHONI CHARGES'\"}}],[{\"Literal\":{\"Value\":\"'TAXI & DHONI CHARGES  -ATM'\"}}],[{\"Literal\":{\"Value\":\"'TAXI & DHONI CHARGES  -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'TAXI & DHONI CHARGES  -DMC'\"}}],[{\"Literal\":{\"Value\":\"'TICKER COST  - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'VEHICLE RENT CHARGES'\"}}],[{\"Literal\":{\"Value\":\"'VEHICLE RENT CHARGES -ATM'\"}}],[{\"Literal\":{\"Value\":\"'VEHICLE RENT CHARGES- CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'VEHICLE RENT CHARGES -DMC'\"}}],[{\"Literal\":{\"Value\":\"'VISA HANDLING FEE  -COST'\"}}]]}}},{\"DisplayName\":\"Utility\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"ACCTDESC\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'ELECTRICITY CHARGES   (APARTMENT) -ATM'\"}}],[{\"Literal\":{\"Value\":\"'ELECTRICITY CHARGES   (APARTMENT) -DMC'\"}}],[{\"Literal\":{\"Value\":\"'ELECTRICITY CHARGES (APARTMENT)'\"}}],[{\"Literal\":{\"Value\":\"'ELECTRICITY CHARGES (APARTMENT)  -CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'ELECTRICITY CHARGES (OFFICE)'\"}}],[{\"Literal\":{\"Value\":\"'ELECTRICITY CHARGES (OFFICE) - ATM'\"}}],[{\"Literal\":{\"Value\":\"'ELECTRICITY CHARGES (OFFICE) - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'ELECTRICITY CHARGES (OFFICE) - DMC'\"}}],[{\"Literal\":{\"Value\":\"'RENT CHARGES (APARTMENT)'\"}}],[{\"Literal\":{\"Value\":\"'RENT CHARGES (APARTMENT)- ADDU'\"}}],[{\"Literal\":{\"Value\":\"'RENT CHARGES (APARTMENT)- ATM'\"}}],[{\"Literal\":{\"Value\":\"'RENT CHARGES (APARTMENT)- CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'RENT CHARGES (APARTMENT)- DMC'\"}}],[{\"Literal\":{\"Value\":\"'RENT CHARGES (OFFICE)'\"}}],[{\"Literal\":{\"Value\":\"'RENT CHARGES (OFFICE)- ADDU'\"}}],[{\"Literal\":{\"Value\":\"'RENT CHARGES (OFFICE)- ATM'\"}}],[{\"Literal\":{\"Value\":\"'RENT CHARGES (OFFICE)- CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'RENT CHARGES (OFFICE)- DMC'\"}}],[{\"Literal\":{\"Value\":\"'REPAIR & MAINTENANCE - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'REPAIRS & MAINTENANCE - ATM'\"}}],[{\"Literal\":{\"Value\":\"'REPAIRS & MAINTENANCE - DMC'\"}}],[{\"Literal\":{\"Value\":\"'REPARE & MAINTANANCE'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (APARTMENT)'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (APARTMENT) - ATM'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (APARTMENT) - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (APARTMENT) - DMC'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (LAND LINE & INTERNET)'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (LAND LINE & INTERNET) - ATM'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (LAND LINE & INTERNET) - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (LAND LINE & INTERNET) - DMC'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (MOBILE)'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (MOBILE) - ATM'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (MOBILE) - CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'TELEPHONE (MOBILE) - DMC'\"}}],[{\"Literal\":{\"Value\":\"'WATER BILLS  (APARTMENT)- ATM'\"}}],[{\"Literal\":{\"Value\":\"'WATER BILLS  (APARTMENT)- CATHAY'\"}}],[{\"Literal\":{\"Value\":\"'WATER BILLS  (APARTMENT)- DMC'\"}}],[{\"Literal\":{\"Value\":\"'WATER BILLS (APARTMENT)'\"}}],[{\"Literal\":{\"Value\":\"'WATER BILLS (OFFICE)'\"}}],[{\"Literal\":{\"Value\":\"'WATER BILLS (OFFICE)  - ATM'\"}}],[{\"Literal\":{\"Value\":\"'WATER BILLS (OFFICE)  - DMC'\"}}],[{\"Literal\":{\"Value\":\"'WATER BILLS (OFFICE) - CATHAY'\"}}]]}}}]}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "SWITCH(",
+              "\tTRUE,",
+              "\tISBLANK('GLAMF'[ACCTDESC]),",
+              "\t\"(Blank)\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"DOCUMENTAION & HANDLING CHRGES\",",
+              "\t\t\"DUES & SUBSCRIPTION\",",
+              "\t\t\"DUES & SUBSCRIPTION - CATHAY\",",
+              "\t\t\"DUES & SUBSCRIPTION -ATM\",",
+              "\t\t\"DUES & SUBSCRIPTION -DMC\",",
+              "\t\t\"ENTERTAINMENT\",",
+              "\t\t\"ENTERTAINMENT - ATM\",",
+              "\t\t\"ENTERTAINMENT - CATHAY\",",
+              "\t\t\"ENTERTAINMENT - DMC\",",
+              "\t\t\"HEAD OFFICE EXPENSES\",",
+              "\t\t\"HEAD OFFICE EXPENSES -ATM\",",
+              "\t\t\"HEAD OFFICE EXPENSES -CATHAY\",",
+              "\t\t\"MANAGEMENT FEES\",",
+              "\t\t\"PRINTING & STATIONARY\",",
+              "\t\t\"PRINTING & STATIONARY - CATHAY\",",
+              "\t\t\"PRINTING & STATIONARY -ATM\",",
+              "\t\t\"PRINTING & STATIONARY -DMC\",",
+              "\t\t\"SHARD SERVICE COST\",",
+              "\t\t\"SHARD SERVICE COST -ATM\",",
+              "\t\t\"SHARD SERVICE COST -CATHAY\"},",
+              "\t\"Administration and Office\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"BAD  DEBTS  W/O\",",
+              "\t\t\"BAD & DOUBTFUL DEBTS\",",
+              "\t\t\"BAD & DOUBTFUL DEBTS - ATM\",",
+              "\t\t\"BAD & DOUBTFUL DEBTS - CATHAY\",",
+              "\t\t\"BAD & DOUBTFUL DEBTS - DMC\"},",
+              "\t\"Bad Debts\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"BANK CHARGES\",",
+              "\t\t\"BANK CHARGES - ATM\",",
+              "\t\t\"BANK CHARGES - CATHAY\",",
+              "\t\t\"BANK CHARGES - DMC\",",
+              "\t\t\"BANK GUARATEE CHARGES\"},",
+              "\t\"Bank Charges\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"CSR PROJECTS EXPENSES\",",
+              "\t\t\"CSR PROJECTS EXPENSES- ATM\",",
+              "\t\t\"CSR PROJECTS EXPENSES- CATHAY\",",
+              "\t\t\"DONATIONS\",",
+              "\t\t\"DONATIONS -ATM\",",
+              "\t\t\"DONATIONS -CATHAY\",",
+              "\t\t\"DONATIONS -DMC\"},",
+              "\t\"CSR\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"DEPRECIATION\",",
+              "\t\t\"DEPRECIATION -ATM\",",
+              "\t\t\"DEPRECIATION -CATHEY\",",
+              "\t\t\"DEPRECIATION -DMC\"},",
+              "\t\"Depreciation\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"DIVIDENT PAID\",",
+              "\t\t\"DIVIDENT PAID -DMC\"},",
+              "\t\"Dividends\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"EXCHANGE GAIN / LOSS\",",
+              "\t\t\"EXCHANGE GAIN / LOSS  -DMC\",",
+              "\t\t\"FINACE COST ON EXCHANGE\",",
+              "\t\t\"FINACE COST ON EXCHANGE - ATM\",",
+              "\t\t\"FINACE COST ON EXCHANGE - CATHAY\",",
+              "\t\t\"FINACE COST ON EXCHANGE - DMC\"},",
+              "\t\"Exchange cost\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"HOTEL BOOKING COST\",",
+              "\t\t\"HOTEL BOOKING COST -ACE TRAVELS HOLIDAYS\",",
+              "\t\t\"HOTEL BOOKING COST -AST\",",
+              "\t\t\"HOTEL BOOKING COST -SLH\"},",
+              "\t\"Hotel Booking Cost\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"ACCOMODATION INCOME-COST -DMC\",",
+              "\t\t\"FACILITY INCOME -COST -DMC\",",
+              "\t\t\"GUESTS HANDLING INCOME -COST -DMC\",",
+              "\t\t\"HANDLING INCOME -COST -DMC\",",
+              "\t\t\"SUPPLEMENT INCOME -COST -DMC\",",
+              "\t\t\"TRANSFER INCOME -COST -DMC\"},",
+              "\t\"Income costs\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"INSUARANCE  (STAFF MEDICLE)\",",
+              "\t\t\"INSUARANCE (FIDELITY & CASH IN TRANSIT)\",",
+              "\t\t\"INSUARANCE (FIDELITY & CASH IN TRANSIT)- ATM\",",
+              "\t\t\"INSUARANCE (FIDELITY & CASH IN TRANSIT)- CATHAY\",",
+              "\t\t\"INSUARANCE (FIDELITY & CASH IN TRANSIT)- DMC\",",
+              "\t\t\"INSUARANCE (OTHER)\",",
+              "\t\t\"INSUARANCE (OTHER)- ATM\",",
+              "\t\t\"INSUARANCE (OTHER)- CATHAY\",",
+              "\t\t\"INSUARANCE (OTHER)- DMC\",",
+              "\t\t\"INSUARANCE (PREMISES)\",",
+              "\t\t\"INSUARANCE (PREMISES) - ATM\",",
+              "\t\t\"INSUARANCE (PREMISES) - CATHAY\",",
+              "\t\t\"INSUARANCE (PREMISES) - DMC\",",
+              "\t\t\"INSUARANCE (STAFF MEDICLE) - ATM\",",
+              "\t\t\"INSUARANCE (STAFF MEDICLE) - CATHAY\",",
+              "\t\t\"INSUARANCE (STAFF MEDICLE) - DMC\"},",
+              "\t\"Insurance\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"LOAN INTEREST EXP -ASTL\",",
+              "\t\t\"O/D INTEREST\",",
+              "\t\t\"O/D INTEREST  -ATM\",",
+              "\t\t\"O/D INTEREST  -DMC\",",
+              "\t\t\"O/D INTEREST -CATHAY\"},",
+              "\t\"Interest\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"IMPAIRMENT EXPENCES\",",
+              "\t\t\"OTHER EXPENSES\",",
+              "\t\t\"OTHER EXPENSES -ADDU\",",
+              "\t\t\"OTHER EXPENSES -ATM\",",
+              "\t\t\"OTHER EXPENSES -CATHAY\",",
+              "\t\t\"OTHER EXPENSES -DMC\"},",
+              "\t\"Other\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"AUDIT FEE\",",
+              "\t\t\"AUDIT FEE - CATHAY\",",
+              "\t\t\"AUDIT FEE -ATM\",",
+              "\t\t\"AUDIT FEE -DMC\",",
+              "\t\t\"LAWYER'S FEE\",",
+              "\t\t\"LAWYER'S FEE -ATM\",",
+              "\t\t\"LAWYER'S FEE -CATHAY\",",
+              "\t\t\"LAWYER'S FEE -DMC\",",
+              "\t\t\"LEGAL CHARGES\",",
+              "\t\t\"LEGAL CHARGES - ATM\",",
+              "\t\t\"LEGAL CHARGES - DMC\",",
+              "\t\t\"LEGAL CHARGES -CATHAY\",",
+              "\t\t\"PROFESSIONAL CHARGES\",",
+              "\t\t\"PROFESSIONAL CHARGES -ATM\",",
+              "\t\t\"PROFESSIONAL CHARGES -CATHAY\",",
+              "\t\t\"PROFESSIONAL CHARGES -DMC\"},",
+              "\t\"Professional and Legal Services\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"REFUND EXPENSES\",",
+              "\t\t\"REFUND EXPENSES -ATM\",",
+              "\t\t\"REFUND EXPENSES -CATHAY\",",
+              "\t\t\"REFUND EXPENSES -DMC\"},",
+              "\t\"Refund Expenses\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"DIRECTOR'S SALARY\",",
+              "\t\t\"DIRECTOR'S SALARY  -ATM\",",
+              "\t\t\"DIRECTOR'S SALARY  -DMC\",",
+              "\t\t\"OTHER ALLOWANCES\",",
+              "\t\t\"OTHER ALLOWANCES -ATM\",",
+              "\t\t\"OTHER ALLOWANCES -CATHAY\",",
+              "\t\t\"OTHER ALLOWANCES -DMC\",",
+              "\t\t\"OVERTIME\",",
+              "\t\t\"OVERTIME - CATHAY\",",
+              "\t\t\"OVERTIME -ATM\",",
+              "\t\t\"OVERTIME -DMC\",",
+              "\t\t\"PENSION FUND (EMPLOYER CONTRIBUTION)\",",
+              "\t\t\"PENSION FUND (EMPLOYER CONTRIBUTION) - ATM\",",
+              "\t\t\"PENSION FUND (EMPLOYER CONTRIBUTION) - CATHAY\",",
+              "\t\t\"PENSION FUND (EMPLOYER CONTRIBUTION) - DMC\",",
+              "\t\t\"STAFF BONUS\",",
+              "\t\t\"STAFF BONUS -ATM\",",
+              "\t\t\"STAFF BONUS -CATHAY\",",
+              "\t\t\"STAFF BONUS -DMC\",",
+              "\t\t\"STAFF SALARY - (EXPATRIATE)\",",
+              "\t\t\"STAFF SALARY - (EXPATRIATE) -ATM\",",
+              "\t\t\"STAFF SALARY - (EXPATRIATE) -CATHAY\",",
+              "\t\t\"STAFF SALARY - (EXPATRIATE) -DMC\",",
+              "\t\t\"STAFF SALARY - (LOCAL)\",",
+              "\t\t\"STAFF SALARY - (LOCAL) -ADDU\",",
+              "\t\t\"STAFF SALARY - (LOCAL) -ATM\",",
+              "\t\t\"STAFF SALARY - (LOCAL) -CATHAY\",",
+              "\t\t\"STAFF SALARY - (LOCAL) -DMC\",",
+              "\t\t\"STAFF TRAINING\",",
+              "\t\t\"STAFF TRAINING -ATM\",",
+              "\t\t\"STAFF TRAINING -CATHAY\",",
+              "\t\t\"STAFF TRAINING -DMC\",",
+              "\t\t\"STAFF UNIFORM COST\",",
+              "\t\t\"STAFF UNIFORM COST - ATM\",",
+              "\t\t\"STAFF UNIFORM COST - CATHAY\",",
+              "\t\t\"STAFF UNIFORM COST - DMC\",",
+              "\t\t\"STAFF WELFARE\",",
+              "\t\t\"STAFF WELFARE - ADDU\",",
+              "\t\t\"STAFF WELFARE  -ATM\",",
+              "\t\t\"STAFF WELFARE - CATHAY\",",
+              "\t\t\"STAFF WELFARE  -DMC\"},",
+              "\t\"Salaries and Labour Costs\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"ADVERTISEMENT\",",
+              "\t\t\"ADVERTISEMENT - ATM\",",
+              "\t\t\"ADVERTISEMENT - CATHAY\",",
+              "\t\t\"ADVERTISEMENT - DMC\",",
+              "\t\t\"MARKETING & BUSINESS PROMOTION\",",
+              "\t\t\"MARKETING & BUSINESS PROMOTION - ADDU\",",
+              "\t\t\"MARKETING & BUSINESS PROMOTION - ATM\",",
+              "\t\t\"MARKETING & BUSINESS PROMOTION - CATHAY\",",
+              "\t\t\"MARKETING & BUSINESS PROMOTION - DMC\"},",
+              "\t\"Selling and Advertisement \",",
+              "\t'GLAMF'[ACCTDESC] IN {\"BPT EXPENSE\",",
+              "\t\t\"BPT EXPENSE -DMC\",",
+              "\t\t\"Deferred Tax Expense\",",
+              "\t\t\"GST EXPENCES\"},",
+              "\t\"Tax\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"IT CHARGES\",",
+              "\t\t\"IT CHARGES -ATM\",",
+              "\t\t\"IT CHARGES -CATHAY\",",
+              "\t\t\"IT CHARGES -DMC\"},",
+              "\t\"Technology costs\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"STAFF AIR TICKETS\",",
+              "\t\t\"STAFF AIR TICKETS - ADDU\",",
+              "\t\t\"STAFF AIR TICKETS  -ATM\",",
+              "\t\t\"STAFF AIR TICKETS - CATHAY\",",
+              "\t\t\"STAFF AIR TICKETS  -DMC\",",
+              "\t\t\"TICKET COST\",",
+              "\t\t\"TICKET COST - FLY DUBAI\",",
+              "\t\t\"TICKET COST - GROUP BOOKING\",",
+              "\t\t\"TICKET COST - IATI  (OTA SYSTEM)\",",
+              "\t\t\"TICKET COST - INDIGO\",",
+              "\t\t\"TICKET COST  -MALDIVIAN AIR\",",
+              "\t\t\"TICKET COST - MANTA AIR\",",
+              "\t\t\"TICKET COST - MYSTIFLY\",",
+              "\t\t\"TICKET COST - UL (FARE)\",",
+              "\t\t\"TICKET COST - UL (TAX)\",",
+              "\t\t\"TICKET COST - US-Bangla Airlines\",",
+              "\t\t\"TICKET COST -AIR ASIA\",",
+              "\t\t\"TICKET COST -EMIRATES\",",
+              "\t\t\"TICKET COST -EMIRTES\",",
+              "\t\t\"TICKET COST -OTHER AIRLINE\",",
+              "\t\t\"TICKET COST -QATAR\",",
+              "\t\t\"TICKET COST -TIGER AIR\"},",
+              "\t\"Ticket Costs\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"ASTL VISA COST\",",
+              "\t\t\"PER DIEM\",",
+              "\t\t\"PER DIEM - ADDU\",",
+              "\t\t\"PER DIEM - ATM\",",
+              "\t\t\"PER DIEM - CATHAY\",",
+              "\t\t\"PER DIEM - DMC\",",
+              "\t\t\"STAFF TRAVEL\",",
+              "\t\t\"STAFF TRAVEL   -ATM\",",
+              "\t\t\"STAFF TRAVEL   -DMC\",",
+              "\t\t\"STAFF TRAVEL - ADDU\",",
+              "\t\t\"STAFF TRAVEL - CATHAY\",",
+              "\t\t\"STAFF VISA\",",
+              "\t\t\"STAFF VISA - ATM\",",
+              "\t\t\"STAFF VISA - CATHAY\",",
+              "\t\t\"STAFF VISA - DMC\",",
+              "\t\t\"TAXI & DHONI CHARGES\",",
+              "\t\t\"TAXI & DHONI CHARGES  -ATM\",",
+              "\t\t\"TAXI & DHONI CHARGES  -CATHAY\",",
+              "\t\t\"TAXI & DHONI CHARGES  -DMC\",",
+              "\t\t\"TICKER COST  - CATHAY\",",
+              "\t\t\"VEHICLE RENT CHARGES\",",
+              "\t\t\"VEHICLE RENT CHARGES -ATM\",",
+              "\t\t\"VEHICLE RENT CHARGES- CATHAY\",",
+              "\t\t\"VEHICLE RENT CHARGES -DMC\",",
+              "\t\t\"VISA HANDLING FEE  -COST\"},",
+              "\t\"Travelling\",",
+              "\t'GLAMF'[ACCTDESC] IN {\"ELECTRICITY CHARGES   (APARTMENT) -ATM\",",
+              "\t\t\"ELECTRICITY CHARGES   (APARTMENT) -DMC\",",
+              "\t\t\"ELECTRICITY CHARGES (APARTMENT)\",",
+              "\t\t\"ELECTRICITY CHARGES (APARTMENT)  -CATHAY\",",
+              "\t\t\"ELECTRICITY CHARGES (OFFICE)\",",
+              "\t\t\"ELECTRICITY CHARGES (OFFICE) - ATM\",",
+              "\t\t\"ELECTRICITY CHARGES (OFFICE) - CATHAY\",",
+              "\t\t\"ELECTRICITY CHARGES (OFFICE) - DMC\",",
+              "\t\t\"RENT CHARGES (APARTMENT)\",",
+              "\t\t\"RENT CHARGES (APARTMENT)- ADDU\",",
+              "\t\t\"RENT CHARGES (APARTMENT)- ATM\",",
+              "\t\t\"RENT CHARGES (APARTMENT)- CATHAY\",",
+              "\t\t\"RENT CHARGES (APARTMENT)- DMC\",",
+              "\t\t\"RENT CHARGES (OFFICE)\",",
+              "\t\t\"RENT CHARGES (OFFICE)- ADDU\",",
+              "\t\t\"RENT CHARGES (OFFICE)- ATM\",",
+              "\t\t\"RENT CHARGES (OFFICE)- CATHAY\",",
+              "\t\t\"RENT CHARGES (OFFICE)- DMC\",",
+              "\t\t\"REPAIR & MAINTENANCE - CATHAY\",",
+              "\t\t\"REPAIRS & MAINTENANCE - ATM\",",
+              "\t\t\"REPAIRS & MAINTENANCE - DMC\",",
+              "\t\t\"REPARE & MAINTANANCE\",",
+              "\t\t\"TELEPHONE (APARTMENT)\",",
+              "\t\t\"TELEPHONE (APARTMENT) - ATM\",",
+              "\t\t\"TELEPHONE (APARTMENT) - CATHAY\",",
+              "\t\t\"TELEPHONE (APARTMENT) - DMC\",",
+              "\t\t\"TELEPHONE (LAND LINE & INTERNET)\",",
+              "\t\t\"TELEPHONE (LAND LINE & INTERNET) - ATM\",",
+              "\t\t\"TELEPHONE (LAND LINE & INTERNET) - CATHAY\",",
+              "\t\t\"TELEPHONE (LAND LINE & INTERNET) - DMC\",",
+              "\t\t\"TELEPHONE (MOBILE)\",",
+              "\t\t\"TELEPHONE (MOBILE) - ATM\",",
+              "\t\t\"TELEPHONE (MOBILE) - CATHAY\",",
+              "\t\t\"TELEPHONE (MOBILE) - DMC\",",
+              "\t\t\"WATER BILLS  (APARTMENT)- ATM\",",
+              "\t\t\"WATER BILLS  (APARTMENT)- CATHAY\",",
+              "\t\t\"WATER BILLS  (APARTMENT)- DMC\",",
+              "\t\t\"WATER BILLS (APARTMENT)\",",
+              "\t\t\"WATER BILLS (OFFICE)\",",
+              "\t\t\"WATER BILLS (OFFICE)  - ATM\",",
+              "\t\t\"WATER BILLS (OFFICE)  - DMC\",",
+              "\t\t\"WATER BILLS (OFFICE) - CATHAY\"},",
+              "\t\"Utility\",",
+              "\t'GLAMF'[ACCTDESC]",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "GLAMF"
+                          }
+                        },
+                        "Property": "ACCTDESC"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "f9ae457a-4064-49fb-91ae-9b1b5d2d8906",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "c16040da-fd36-4752-90bb-947daa3cc130",
+        "measures": [
+          {
+            "name": "Total Expense",
+            "expression": "CALCULATE(SUM(GLPOST[TRANSAMT]), GLAMF[ACCTBAL] = 1, GLAMF[ACCTTYPE] = \"I\")",
+            "formatString": "0",
+            "lineageTag": "aa001365-a1c9-410f-897c-e63880964104"
+          },
+          {
+            "name": "Operating Expense",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('GLPOST'[TRANSAMT]),",
+              "    FILTER(",
+              "        'GLAMF',",
+              "        'GLAMF'[ACCTDESC (groups)] IN {\"Salaries and Labour Costs\", \"Ticket Costs\", \"Selling and Advertisement\", \"Travelling\", \"Utility\", \"Professional and Legal Services\" , \"Administration and Office\", \"Bank Charges\", \"CSR\", \"Depreciation\", \"Insurance\", \"Hostel Booking Cost\" , \"Insurance\", \"Bad Debts\" }",
+              "    )",
+              ")"
+            ],
+            "lineageTag": "99f6ff60-5626-46cc-881f-83e75faaff7c"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "GLAMF",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"192.168.30.211\", \"TSTDAT\"),",
+                "    dbo_GLAMF = Source{[Schema=\"dbo\",Item=\"GLAMF\"]}[Data],",
+                "    #\"Filtered Rows\" = Table.SelectRows(dbo_GLAMF, each ([ACCTBAL] = \"1\") and ([ACCTTYPE] = \"I\"))",
+                "in",
+                "    #\"Filtered Rows\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GLPOST",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ACCTID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a74a0ea8-ba79-4b62-b87e-8d3d4bc655ec",
+            "sourceColumn": "ACCTID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FISCALYR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4ccf2a07-a267-40c4-ac68-889ad10c667b",
+            "sourceColumn": "FISCALYR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FISCALPERD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cb7c15cc-e7f2-41c8-9eab-d93dcd6a9996",
+            "sourceColumn": "FISCALPERD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SRCECURN",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6fd6c55d-34e0-4953-b1e0-c2663d00d1f9",
+            "sourceColumn": "SRCECURN",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SRCELEDGER",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5e877a8a-a225-4a3c-afd4-e4f03aa03b21",
+            "sourceColumn": "SRCELEDGER",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SRCETYPE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "082b3cfb-71f4-44f0-a6f8-10e3f61d6733",
+            "sourceColumn": "SRCETYPE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "POSTINGSEQ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "af7add5e-b656-480b-8487-4d71d936665c",
+            "sourceColumn": "POSTINGSEQ",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CNTDETAIL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "02548e02-a45d-436a-9f95-d14a09064fc6",
+            "sourceColumn": "CNTDETAIL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AUDTDATE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "6003e402-6806-49b2-905c-763b7a3d31fb",
+            "sourceColumn": "AUDTDATE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AUDTTIME",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3142ca10-119a-4e9d-8d23-26a5cf470992",
+            "sourceColumn": "AUDTTIME",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AUDTUSER",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1ce61309-aa15-44bd-b10e-6db5b7d78d04",
+            "sourceColumn": "AUDTUSER",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AUDTORG",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c6ed3c49-030e-4110-adf2-752f0c48f802",
+            "sourceColumn": "AUDTORG",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "JRNLDATE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ec6e1b88-7471-41df-a822-7c97b73b89c9",
+            "sourceColumn": "JRNLDATE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "BATCHNBR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e55f262a-3b61-4832-b989-0d6c5d19432d",
+            "sourceColumn": "BATCHNBR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ENTRYNBR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "60f6b779-8154-4de4-bc0f-eb5f875f7267",
+            "sourceColumn": "ENTRYNBR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TRANSNBR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "938c5595-1be5-402c-88f1-530aa2d78849",
+            "sourceColumn": "TRANSNBR",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "EDITALLOWD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "82f13f16-d4b9-4e4b-b976-abaaa43cc2b5",
+            "sourceColumn": "EDITALLOWD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CONSOLIDAT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "551f56f7-094f-4690-81a6-40d8af60b5de",
+            "sourceColumn": "CONSOLIDAT",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "COMPANYID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b3215200-dca0-4404-9913-d84c7cc07bc4",
+            "sourceColumn": "COMPANYID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "JNLDTLDESC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a762e9a9-8a13-40fa-9919-add9151328b8",
+            "sourceColumn": "JNLDTLDESC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "JNLDTLREF",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7bd400f0-18f7-4670-9495-a957ffeafdd7",
+            "sourceColumn": "JNLDTLREF",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TRANSAMT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "5f966d0e-4b18-4fe0-b1c3-f2ca49b3c8db",
+            "sourceColumn": "TRANSAMT",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TRANSQTY",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7de5cedf-11c7-4684-80f1-1c80ed78850f",
+            "sourceColumn": "TRANSQTY",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SCURNDEC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5fc3ff07-bd2f-40f3-9d14-5ce21d6227e2",
+            "sourceColumn": "SCURNDEC",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SCURNAMT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "a897231c-acef-4619-a1d9-ed2cfac051c1",
+            "sourceColumn": "SCURNAMT",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "HCURNCODE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "87a20cac-e630-412b-8d38-1e65b3d863c6",
+            "sourceColumn": "HCURNCODE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RATETYPE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d0f808c3-a7ed-4c13-911b-6cdd6b2b1248",
+            "sourceColumn": "RATETYPE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SCURNCODE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "072b565f-50fd-4c50-aa57-b9c13f3f3a4a",
+            "sourceColumn": "SCURNCODE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RATEDATE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3408ae59-71eb-451e-a8a7-11d38f585956",
+            "sourceColumn": "RATEDATE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CONVRATE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "bd314675-01c9-464e-94a9-1f16049b29d4",
+            "sourceColumn": "CONVRATE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "RATESPREAD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "74a3843f-d449-463d-8f2e-01529bdcde68",
+            "sourceColumn": "RATESPREAD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DATEMTCHCD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7a927586-37a2-418d-888c-0114bf2aeb18",
+            "sourceColumn": "DATEMTCHCD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RATEOPER",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2a607539-7b8b-4100-a3ef-33b292e231a6",
+            "sourceColumn": "RATEOPER",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DRILSRCTY",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "78bad702-4b5b-452f-9fb7-713269bd72f4",
+            "sourceColumn": "DRILSRCTY",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DRILLDWNLK",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "6a8766d1-9c53-4dad-ba91-672e18c1b3cf",
+            "sourceColumn": "DRILLDWNLK",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DRILAPP",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "29c24923-bc74-47ea-92b5-395dd7f2b344",
+            "sourceColumn": "DRILAPP",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RPTAMT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "a25fe11d-f3ea-4c0b-a54b-fcbdbac89b39",
+            "sourceColumn": "RPTAMT",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VALUES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0291be79-f334-4604-bf8d-6e306bd0c36f",
+            "sourceColumn": "VALUES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DOCDATE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "fce5f8f5-4d74-44d4-8229-dd4a3c68ab99",
+            "sourceColumn": "DOCDATE",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_c752d224-1d1d-459e-a50c-be9c28e704bb"
+                },
+                "isDefault": true,
+                "relationship": "91f88b28-9da1-4a49-a865-dccaa22c713d"
+              }
+            ]
+          },
+          {
+            "name": "TXRPTSTAT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9ace7dd8-f2e9-4dcd-a00f-6f9d222bf958",
+            "sourceColumn": "TXRPTSTAT",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TAXAUTH",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "02cb1cf0-c6bd-42bc-a430-15b9406e29ab",
+            "sourceColumn": "TAXAUTH",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TXACCTTYPE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ed600a91-ac4f-43e0-8323-a1bf1faa701a",
+            "sourceColumn": "TXACCTTYPE",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "0d97a5a1-74c0-4b04-b806-dcbe3b368f6e",
+        "partitions": [
+          {
+            "name": "GLPOST",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"192.168.30.211\", \"TSTDAT\"),",
+                "    dbo_GLPOST = Source{[Schema=\"dbo\",Item=\"GLPOST\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(dbo_GLPOST,{{\"DOCDATE\", type text}}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Changed Type\",{{\"DOCDATE\", type date}})",
+                "in",
+                "    #\"Changed Type1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_2f460ccd-4e66-49dd-9e19-88ed96f1948d",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "446767d7-d581-4f1c-a97f-21546eb0d5c5",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "0b44517a-69fa-48d5-bddb-a4849a229652",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "9b625941-0382-431e-b41c-bbf599ccbb88",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "af243bb6-8c61-4699-b47f-a8b773dff14b",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "03670c93-746f-4b96-80db-2697fae5d86d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "c3278057-771c-48c3-b87d-912ae2003542",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "7c8d9eba-9cbe-4d32-af8b-aa7bb682a5c8",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "1d9671f0-ac01-45da-9653-d35b643c30e6",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "92fcfcbc-eabb-4c57-b1bb-4f8f74bf6451",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "4b89fdca-8531-4902-9365-3ffbc920275e",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "9ffbef36-117e-40d9-b128-4e5ddefd2335",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "6f420a8c-c1eb-46a5-a5c7-fcd8f194e825"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "121e097a-4810-478d-999d-a688d29ab095",
+        "partitions": [
+          {
+            "name": "LocalDateTable_2f460ccd-4e66-49dd-9e19-88ed96f1948d",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('GLAFS'[Date])), 1, 1), Date(Year(MAX('GLAFS'[Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_c752d224-1d1d-459e-a50c-be9c28e704bb",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "125bdb0e-7ea0-493b-ba91-4f7af09de3c1",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "0a3d7234-a19b-483a-b978-9150324c1a2e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "ef08b968-650b-4bdb-9a0d-e3092a35cd1c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "aba76b08-6d81-4f12-8a59-2958fec1c13f",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "22f72688-f5a3-4a48-9483-3115f1ec5cc4",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "73cda366-9888-4176-b128-049b0e1c9749",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "66cd697b-6295-40b7-8d37-37c60568d460",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "c57540e6-de8e-4773-9661-6da15cb5137e",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "949a2755-af86-4091-a792-cf8bd923c4c1",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "9df8cd7f-21a6-4eff-b38f-63824b897ef1",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "bb91e7ae-75ff-40cf-92dd-c9c0ae735877",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "86972f05-5d91-4465-b782-76bd597e9d24"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "60fd9d90-a017-4f6e-8bd4-8d0f1a597969",
+        "partitions": [
+          {
+            "name": "LocalDateTable_c752d224-1d1d-459e-a50c-be9c28e704bb",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('GLPOST'[DOCDATE])), 1, 1), Date(Year(MAX('GLPOST'[DOCDATE])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}
